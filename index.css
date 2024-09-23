@@ -94,24 +94,28 @@ body {
   align-items: center;
   padding: 0 0 0 20px;
 }
+#toggle-min svg {
+  fill: var(--text-color, #e8eaed); 
+  transition: opacity 0.1s; 
+}
+
+#toggle-min svg:last-child {
+  display: none; 
+}
+
+#toggle-min.done svg:first-child {
+  display: none;
+}
+
+#toggle-min.done svg:last-child {
+  display: block; 
+}
 
 #toggle-min {
   border-radius: 50%;
   border: none;
   background-color: var(--background);
   transition: background-color 0.1s, color 0.1s;
-}
-
-#toggle-min svg {
-  fill: var(--text-color);
-}
-
-#toggle-min svg:last-child {
-  display: none;
-}
-
-#toggle-min #done svg:first-child {
-  display: none;
 }
 
 .codeEditor {

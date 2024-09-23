@@ -66,3 +66,12 @@ const container = document.querySelector(".container");
 toggleButton.addEventListener("click", () => {
     container.classList.toggle("expanded");
 });
+// const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', () => {
+    if (toggleButton.classList.contains('done')) {
+        toggleButton.classList.remove ("done") // Remove the id
+    } else {
+        toggleButton.classList.add  ('done'); // Add the id
+    }
+});
